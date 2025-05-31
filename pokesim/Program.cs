@@ -11,11 +11,7 @@ using System;
 using System.Text.Json;
 
 namespace PokeSim {
-    public class DexEntry {
-        public String Name { get; set; }
-    }
-
-    internal class Program { 
+    public class Program { 
         static void Main(string[] args) {
             string jsonTest =
                 """
@@ -26,7 +22,7 @@ namespace PokeSim {
             DexEntry? bulbasaur = JsonSerializer.Deserialize<DexEntry>(jsonTest);
 
             Console.WriteLine("ARGO'S POKEMON BATTLE SIMULATOR");
-            Console.WriteLine("Now testing pulling value from JSON string.");
+            Console.WriteLine("Now testing pulling value from JSON string, with the DexEntry class in its own file.");
             Console.WriteLine($"Name pulled: {bulbasaur?.Name}");
         }
     }
