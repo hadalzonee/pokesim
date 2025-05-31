@@ -7,4 +7,12 @@
  *      everything
  */
 
-Console.WriteLine("ARGO'S POKEMON BATTLE SIMULATOR");
+using System;
+
+namespace PokeSim {
+    internal class Program { 
+        static void Main(string[] args) {
+            Console.WriteLine("ARGO'S POKEMON BATTLE SIMULATOR");
+        }
+    }
+}
