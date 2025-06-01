@@ -16,14 +16,21 @@ namespace PokeSim {
             string jsonTest =
                 """
                 {
-                    "Name": "Bulbasaur"
+                    "ID": 1,
+                    "Name": "Bulbasaur",
+                    "Type1": "Grass",
+                    "Type2": "Poison",
+                    "Height": 0.7,
+                    "Weight": 6.9
                 }
                 """;
             DexEntry? bulbasaur = JsonSerializer.Deserialize<DexEntry>(jsonTest);
 
             Console.WriteLine("ARGO'S POKEMON BATTLE SIMULATOR");
-            Console.WriteLine("Now testing pulling value from JSON string, with the DexEntry class in its own file.");
-            Console.WriteLine($"Name pulled: {bulbasaur?.Name}");
+            Console.WriteLine("Now testing pulling multiple values from JSON string.");
+            Console.WriteLine($"ID and Name: {bulbasaur?.ID} {bulbasaur?.Name}");
+            Console.WriteLine($"Type(s): {bulbasaur?.Type1}/{bulbasaur?.Type2}");
+            Console.WriteLine($"Height: {bulbasaur?.Height}. Weight: {bulbasaur?.Weight}");
         }
     }
 }
