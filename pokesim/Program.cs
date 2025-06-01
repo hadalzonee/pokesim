@@ -17,7 +17,7 @@ namespace PokeSim {
             Console.WriteLine("ARGO'S POKEMON BATTLE SIMULATOR");
             Console.WriteLine($"Name: {bulbasaur?.Name}");
             foreach (var stat in bulbasaur?.BaseStats) {
-                Console.WriteLine($"{0}", stat);
+                Console.WriteLine($"{stat}");
             }
         }
     }
