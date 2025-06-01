@@ -4,5 +4,12 @@
   "Type1": "Grass",
   "Type2": "Poison",
   "Height": 0.7,
-  "Weight": 6.9
+  "Weight": 6.9,
+  "BaseStats": [
+    45,
+    49,
+    49,
+    65,
+    45
+  ]
 }

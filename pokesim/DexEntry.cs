@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 public class DexEntry {
     public int ID { get; set; }
@@ -7,4 +8,5 @@ public class DexEntry {
     public String? Type2 { get; set; }
     public decimal Height { get; set; }
     public decimal Weight { get; set; }
+    public required List<int> BaseStats { get; set; }
 }
